@@ -12,7 +12,7 @@
         <link href="https://fonts.bunny.net/css?family=poppins:300,400,500,600,700&display=swap" rel="stylesheet" />
         
         <!-- Icons -->
-        <link rel="icon" href="/public/logo.png">
+        <link rel="icon" href="{{ asset('logo.png') }}">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
         <!-- Styles -->
@@ -69,7 +69,7 @@
         <!-- Hero Section -->
         <section class="relative min-h-screen hero-bg flex items-center">
             
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-16">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     
                     <!-- Hero Content -->
@@ -125,6 +125,9 @@
                     
                     <!-- Hero Image/Illustration -->
                     <div class="relative">
+                        <div>
+                            <img src="{{ asset('hero.png') }}" alt="#">
+                        </div>
                     </div>
                 </div>
             </div>
