@@ -23,27 +23,31 @@
                 font-family: 'Poppins', sans-serif;
             }
             .hero-bg {
-                background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+                background-image: url('{{ asset('landing-background.png') }}');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+            }
+            .hero-bg::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(248, 250, 252, 0.85);
+                backdrop-filter: blur(2px);
+            }
+            .hero-content {
+                position: relative;
+                z-index: 10;
             }
             .card-hover {
                 transition: all 0.3s ease;
             }
             .card-hover:hover {
                 transform: translateY(-5px);
-            }
-            .wave-decoration {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                overflow: hidden;
-                line-height: 0;
-            }
-            .wave-decoration svg {
-                position: relative;
-                display: block;
-                width: calc(100% + 1.3px);
-                height: 60px;
             }
         </style>
     </head>
@@ -68,20 +72,19 @@
 
         <!-- Hero Section -->
         <section class="relative min-h-screen hero-bg flex items-center">
-            
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-16 hero-content">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     
                     <!-- Hero Content -->
                     <div class="text-center lg:text-left">
                         <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                            Laporan Piket Sekolah Jadi 
-                            <span class="text-blue-600">Gampang Banget!</span>
+                            Sistem Pencatatan Piket Digital 
+                            <span class="text-blue-600">Berbasis Web!</span>
                         </h1>
                         
                         <p class="text-lg text-gray-700 mb-8">
-                            Udah capek ngatur jadwal piket manual? PiketWoi hadir buat ngebantu kamu kelola piket sekolah dengan lebih praktis. 
-                            Dari jadwal sampai laporan, semua bisa diatur dengan mudah!
+                            Sistem pencatatan piket digital berbasis web untuk menggantikan metode manual yang sering menimbulkan masalah. 
+                            Solusi praktis dan transparan untuk budaya disiplin sekolah.
                         </p>
                         
                         <!-- CTA Buttons -->
@@ -110,15 +113,19 @@
                         <div class="flex flex-wrap gap-6 mt-10 text-sm text-gray-600">
                             <div class="flex items-center gap-2">
                                 <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-                                Gratis untuk sekolah
+                                Berbasis Laravel
                             </div>
                             <div class="flex items-center gap-2">
                                 <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-                                Setup dalam 5 menit
+                                Arsitektur MVC
                             </div>
                             <div class="flex items-center gap-2">
                                 <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
-                                Bisa diakses dari HP
+                                Real-time Access
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                                Data Terstruktur
                             </div>
                         </div>
                     </div>
@@ -138,44 +145,44 @@
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold text-gray-900 mb-3">
-                        Kenapa Harus PiketWoi?
+                        Keunggulan PiketWoi
                     </h2>
                     <p class="text-gray-600">
-                        Karena ngatur piket sekolah nggak harus ribet!
+                        Solusi digital untuk pencatatan piket yang lebih terorganisir dan transparan
                     </p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-6">
                     <!-- Feature 1 -->
-                    <div class="p-6 card-hover">
+                    <div class="p-6 card-hover bg-white rounded-xl shadow-sm border">
                         <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                            📅
+                            <i class="fas fa-database text-blue-600"></i>
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Jadwal Otomatis</h3>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Data Terstruktur</h3>
                         <p class="text-gray-600 text-sm">
-                            Nggak perlu bingung lagi ngatur jadwal piket. Tinggal set sekali, sisanya biar sistem yang atur!
+                            Menggantikan pencatatan manual yang tidak terstruktur dengan sistem database yang rapi dan mudah diverifikasi.
                         </p>
                     </div>
 
                     <!-- Feature 2 -->
-                    <div class="p-6 card-hover">
+                    <div class="p-6 card-hover bg-white rounded-xl shadow-sm border">
                         <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                            ✅
+                            <i class="fas fa-shield-alt text-green-600"></i>
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Absen Digital</h3>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Mencegah Konflik</h3>
                         <p class="text-gray-600 text-sm">
-                            Absen piket jadi praktis! Cukup klik dari HP, langsung tercatat. Nggak ada lagi yang bolos diam-diam.
+                            Sistem transparan yang mengurangi risiko konflik antar siswa dengan pencatatan yang jelas dan dapat diverifikasi.
                         </p>
                     </div>
 
                     <!-- Feature 3 -->
-                    <div class="p-6 card-hover">
-                        <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
-                            📱
+                    <div class="p-6 card-hover bg-white rounded-xl shadow-sm border">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-clock text-purple-600"></i>
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Akses dari HP</h3>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Real-time Access</h3>
                         <p class="text-gray-600 text-sm">
-                            Bisa diakses dari HP kapan aja, dimana aja. Mau cek jadwal atau laporan, tinggal buka browser!
+                            Akses data piket secara real-time dengan teknologi Laravel yang modern dan arsitektur MVC yang terorganisir.
                         </p>
                     </div>
                 </div>
@@ -191,7 +198,7 @@
                         <span class="text-xl font-bold text-gray-800">PiketWoi</span>
                     </div>
                     <p class="text-gray-600 mb-6 max-w-md mx-auto">
-                        Laporan piket sekolah jadi lebih mudah dan terorganisir. Gratis untuk semua sekolah di Indonesia!
+                        Sistem pencatatan piket digital yang praktis, transparan, dan mendukung budaya disiplin di lingkungan sekolah.
                     </p>
                     <div class="flex justify-center space-x-6 text-sm text-gray-500 mb-6">
                         <a href="#about" class="hover:text-gray-700">Tentang</a>
