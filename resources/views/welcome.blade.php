@@ -98,7 +98,7 @@
                                 <div class="relative">
                                     <a href="{{ route('login') }}" 
                                     class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
-                                        Hubungi Admin
+                                        hubungi Admin
                                     </a>
                                     
                                     <span class="px-4 py-1 text-gray-500 text-sm">
