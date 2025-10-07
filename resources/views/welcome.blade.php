@@ -12,6 +12,7 @@
         <link href="https://fonts.bunny.net/css?family=poppins:300,400,500,600,700&display=swap" rel="stylesheet" />
         
         <!-- Icons -->
+        <link rel="icon" href="/public/logo.png">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
         <!-- Styles -->
@@ -67,9 +68,6 @@
 
         <!-- Hero Section -->
         <section class="relative min-h-screen hero-bg flex items-center">
-            <!-- Simple decoration -->
-            <div class="absolute top-20 right-10 w-32 h-32 bg-blue-100 rounded-full opacity-40"></div>
-            <div class="absolute bottom-32 left-10 w-24 h-24 bg-green-100 rounded-full opacity-30"></div>
             
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -83,7 +81,7 @@
                         
                         <p class="text-lg text-gray-700 mb-8">
                             Udah capek ngatur jadwal piket manual? PiketWoi hadir buat ngebantu kamu kelola piket sekolah dengan lebih praktis. 
-                            Dari jadwal sampai absensi, semua bisa diatur dengan mudah!
+                            Dari jadwal sampai laporan, semua bisa diatur dengan mudah!
                         </p>
                         
                         <!-- CTA Buttons -->
@@ -96,12 +94,7 @@
                             @else
                                 <a href="{{ route('register') }}" 
                                    class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
-                                    Coba Gratis
-                                </a>
-                                
-                                <a href="{{ route('login') }}" 
-                                   class="px-6 py-3 border border-gray-300 hover:border-gray-400 text-gray-700 font-medium rounded-lg transition-colors">
-                                    Masuk
+                                    Coba Sekarang
                                 </a>
                             @endauth
                         </div>
@@ -125,38 +118,13 @@
                     
                     <!-- Hero Image/Illustration -->
                     <div class="relative">
-                        <div class="bg-white rounded-2xl p-6 shadow-lg border">
-                            <div class="mb-4">
-                                <h3 class="text-lg font-semibold text-gray-800 mb-3">Dashboard Piket Hari Ini</h3>
-                                <div class="space-y-3">
-                                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                                        <span class="text-sm">Kelas 12A - Ruang 201</span>
-                                        <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Selesai</span>
-                                    </div>
-                                    <div class="flex items-center justify-between p-3 bg-blue-50 rounded-lg">
-                                        <span class="text-sm">Kelas 11B - Kantin</span>
-                                        <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Sedang Berjalan</span>
-                                    </div>
-                                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                                        <span class="text-sm">Kelas 10C - Halaman</span>
-                                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Belum Mulai</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pt-3 border-t">
-                                <div class="flex justify-between text-sm text-gray-600">
-                                    <span>Kehadiran hari ini</span>
-                                    <span class="font-medium">28/30 siswa</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section class="py-16 bg-white" title="about">
+        <!-- About Section -->
+        <section class="py-16 bg-white" id="about">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold text-gray-900 mb-3">
@@ -216,7 +184,7 @@
                         Laporan piket sekolah jadi lebih mudah dan terorganisir. Gratis untuk semua sekolah di Indonesia!
                     </p>
                     <div class="flex justify-center space-x-6 text-sm text-gray-500 mb-6">
-                        <a href="about" class="hover:text-gray-700">Tentang</a>
+                        <a href="#about" class="hover:text-gray-700">Tentang</a>
                         <a href="#" class="hover:text-gray-700">Bantuan</a>
                         <a href="#" class="hover:text-gray-700">Kontak</a>
                     </div>
