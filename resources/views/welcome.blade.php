@@ -77,7 +77,7 @@
                     <!-- Hero Content -->
                     <div class="text-center lg:text-left">
                         <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                            Bikin Piket Sekolah Jadi 
+                            Laporan Piket Sekolah Jadi 
                             <span class="text-blue-600">Gampang Banget!</span>
                         </h1>
                         
@@ -156,7 +156,7 @@
         </section>
 
         <!-- Features Section -->
-        <section class="py-16 bg-white">
+        <section class="py-16 bg-white" title="about">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold text-gray-900 mb-3">
@@ -213,10 +213,10 @@
                         <span class="text-xl font-bold text-gray-800">PiketWoi</span>
                     </div>
                     <p class="text-gray-600 mb-6 max-w-md mx-auto">
-                        Bikin piket sekolah jadi lebih mudah dan terorganisir. Gratis untuk semua sekolah di Indonesia!
+                        Laporan piket sekolah jadi lebih mudah dan terorganisir. Gratis untuk semua sekolah di Indonesia!
                     </p>
                     <div class="flex justify-center space-x-6 text-sm text-gray-500 mb-6">
-                        <a href="#" class="hover:text-gray-700">Tentang</a>
+                        <a href="about" class="hover:text-gray-700">Tentang</a>
                         <a href="#" class="hover:text-gray-700">Bantuan</a>
                         <a href="#" class="hover:text-gray-700">Kontak</a>
                     </div>
