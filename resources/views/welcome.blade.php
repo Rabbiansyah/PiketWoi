@@ -92,15 +92,17 @@
                                     Buka Dashboard
                                 </a>
                             @else
-                                <a href="{{ route('login') }}" 
-                                   class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
-                                    Coba Gratis
-                                </a>
-                                
-                                <a href="{{ route('login') }}" 
-                                   class="px-6 py-3 border border-gray-300 hover:border-gray-400 text-gray-700 font-medium rounded-lg transition-colors">
-                                    Masuk
-                                </a>
+                                <div class="relative">
+                                    <a href="{{ route('login') }}" 
+                                    class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
+                                        Hubungi Admin
+                                    </a>
+                                    
+                                    <span class="px-4 py-1 text-gray-500 text-sm">
+                                        <i class="fas fa-info-circle mr-1"></i>
+                                        Hubungi Developer untuk Akun Baru
+                                    </span>
+                                </div>
                             @endauth
                         </div>
                         

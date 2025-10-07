@@ -9,14 +9,9 @@
     @else
         <a
             href="{{ route('login') }}"
-            class="px-4 py-2 text-gray-700 hover:text-gray-900 font-medium transition-colors"
+            class="px-4 py-2 text-white rounded-lg bg-blue-600 hover:bg-blue-700 font-medium transition-colors"
         >
             Masuk
         </a>
-
-        <span class="px-4 py-2 text-gray-500 text-sm">
-            <i class="fas fa-info-circle mr-1"></i>
-            Hubungi Developer untuk Akun Baru
-        </span>
     @endauth
 </nav>
