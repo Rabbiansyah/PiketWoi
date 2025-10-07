@@ -24,7 +24,7 @@
                 font-family: 'Poppins', sans-serif;
             }
             .hero-bg {
-                background-image: url('{{ asset('landing-background.png') }}');
+                background-image: url('{{ asset("landing-background.png") }}');
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
