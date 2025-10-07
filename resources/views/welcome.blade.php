@@ -24,7 +24,25 @@
                 font-family: 'Poppins', sans-serif;
             }
             .hero-bg {
-                background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+                background-image: url('{{ asset('landing-background.png') }}');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+            }
+            .hero-bg::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(248, 250, 252, 0.85);
+                backdrop-filter: blur(2px);
+            }
+            .hero-content {
+                position: relative;
+                z-index: 10;
             }
             .card-hover {
                 transition: all 0.3s ease;
@@ -69,8 +87,7 @@
 
         <!-- Hero Section -->
         <section class="relative min-h-screen hero-bg flex items-center">
-            
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-16 hero-content">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     
                     <!-- Hero Content -->
