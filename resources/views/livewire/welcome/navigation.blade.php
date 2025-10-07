@@ -14,13 +14,9 @@
             Masuk
         </a>
 
-        @if (Route::has('register'))
-            <a
-                href="{{ route('register') }}"
-                class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
-            >
-                Daftar
-            </a>
-        @endif
+        <span class="px-4 py-2 text-gray-500 text-sm">
+            <i class="fas fa-info-circle mr-1"></i>
+            Hubungi Developer untuk Akun Baru
+        </span>
     @endauth
 </nav>

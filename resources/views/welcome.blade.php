@@ -94,15 +94,15 @@
                                     Buka Dashboard
                                 </a>
                             @else
-                                <a href="{{ route('register') }}" 
+                                <a href="{{ route('login') }}" 
                                    class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
-                                    Coba Gratis
+                                    Masuk ke Sistem
                                 </a>
                                 
-                                <a href="{{ route('login') }}" 
-                                   class="px-6 py-3 border border-gray-300 hover:border-gray-400 text-gray-700 font-medium rounded-lg transition-colors">
-                                    Masuk
-                                </a>
+                                <div class="px-6 py-3 border border-gray-300 text-gray-600 rounded-lg bg-gray-50">
+                                    <i class="fas fa-info-circle mr-2"></i>
+                                    Hubungi Developer untuk Akun Baru
+                                </div>
                             @endauth
                         </div>
                         
