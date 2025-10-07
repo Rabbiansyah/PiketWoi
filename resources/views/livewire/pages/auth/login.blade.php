@@ -110,27 +110,17 @@ new #[Layout('layouts.guest')] class extends Component
             Masuk
         </button>
 
-        <!-- Divider -->
-        <div class="relative my-6">
-            <div class="absolute inset-0 flex items-center">
-                <div class="w-full border-t border-gray-300"></div>
+        <!-- Information Box -->
+        <div class="mt-6 p-4 bg-blue-50 rounded-xl border border-blue-200">
+            <div class="flex items-start space-x-3">
+                <div class="flex-shrink-0 mt-0.5">
+                    <i class="fas fa-info-circle text-blue-500"></i>
+                </div>
+                <div class="text-sm text-blue-700">
+                    <p class="font-medium mb-1">Butuh Akun Baru?</p>
+                    <p>Untuk membuat akun admin baru, silakan hubungi developer sistem. Hanya administrator yang dapat membuat akun pengguna baru.</p>
+                </div>
             </div>
-            <div class="relative flex justify-center text-sm">
-                <span class="px-4 bg-white text-gray-500">atau</span>
-            </div>
-        </div>
-
-        <!-- Register Link -->
-        <div class="text-center">
-            <p class="text-sm text-gray-600">
-                Belum punya akun? 
-                <a href="{{ route('register') }}" 
-                   wire:navigate
-                   class="font-medium text-green-600 hover:text-green-700 transition-colors duration-200">
-                    <i class="fas fa-user-plus mr-1"></i>
-                    Daftar sekarang
-                </a>
-            </p>
         </div>
     </form>
 </div>

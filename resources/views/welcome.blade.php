@@ -92,9 +92,14 @@
                                     Buka Dashboard
                                 </a>
                             @else
-                                <a href="{{ route('register') }}" 
+                                <a href="{{ route('login') }}" 
                                    class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
-                                    Coba Sekarang
+                                    Coba Gratis
+                                </a>
+                                
+                                <a href="{{ route('login') }}" 
+                                   class="px-6 py-3 border border-gray-300 hover:border-gray-400 text-gray-700 font-medium rounded-lg transition-colors">
+                                    Masuk
                                 </a>
                             @endauth
                         </div>
