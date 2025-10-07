@@ -21,60 +21,105 @@
             body {
                 font-family: 'Poppins', sans-serif;
             }
-            .school-pattern {
-                background-image: 
-                    radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-                    radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
-                    radial-gradient(circle at 40% 80%, rgba(245, 158, 11, 0.1) 0%, transparent 50%);
+            
+            .auth-background {
+                background: url('{{ asset("assets/auth-background.jpg") }}');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
             }
+            
+            .auth-background::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(
+                    135deg,
+                    rgba(59, 130, 246, 0.8) 0%,
+                    rgba(147, 51, 234, 0.7) 50%,
+                    rgba(79, 70, 229, 0.8) 100%
+                );
+                backdrop-filter: blur(2px);
+                -webkit-backdrop-filter: blur(2px);
+            }
+            
+            .dark .auth-background::before {
+                background: linear-gradient(
+                    135deg,
+                    rgba(17, 24, 39, 0.9) 0%,
+                    rgba(55, 65, 81, 0.8) 50%,
+                    rgba(31, 41, 55, 0.9) 100%
+                );
+                backdrop-filter: blur(3px);
+                -webkit-backdrop-filter: blur(3px);
+            }
+            
             .glass-effect {
-                backdrop-filter: blur(10px);
+                backdrop-filter: blur(16px);
+                -webkit-backdrop-filter: blur(16px);
                 background: rgba(255, 255, 255, 0.95);
-                border: 1px solid rgba(255, 255, 255, 0.2);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            }
+            
+            .dark .glass-effect {
+                background: rgba(31, 41, 55, 0.95);
+                border: 1px solid rgba(75, 85, 99, 0.3);
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+            }
+            
+            .text-with-glow {
+                text-shadow: 
+                    0 0 10px rgba(255, 255, 255, 0.8),
+                    0 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            
+            .dark .text-with-glow {
+                text-shadow: 
+                    0 0 15px rgba(59, 130, 246, 0.6),
+                    0 2px 4px rgba(0, 0, 0, 0.8);
             }
         </style>
     </head>
-    <body class="font-sans text-gray-900 antialiased">
-        <!-- Background with school pattern -->
-        <div class="min-h-screen school-pattern bg-gradient-to-br from-blue-50 via-green-50 to-yellow-50 flex flex-col justify-center items-center relative overflow-hidden">
+    <body class="font-sans text-gray-900 dark:text-gray-100 antialiased transition-colors duration-300">
+        <!-- Dark mode toggle (top right) -->
+        <div class="fixed top-4 right-4 z-50">
+            <x-dark-mode-toggle />
+        </div>
+        
+        <!-- Auth Background -->
+        <div class="min-h-screen auth-background flex flex-col justify-center items-center relative">
             
-            <!-- Decorative elements -->
-            <div class="absolute top-10 left-10 w-20 h-20 bg-blue-200 rounded-full opacity-20 animate-pulse"></div>
-            <div class="absolute top-32 right-20 w-16 h-16 bg-green-200 rounded-full opacity-20 animate-pulse delay-1000"></div>
-            <div class="absolute bottom-20 left-20 w-24 h-24 bg-yellow-200 rounded-full opacity-20 animate-pulse delay-2000"></div>
-            <div class="absolute bottom-32 right-10 w-12 h-12 bg-purple-200 rounded-full opacity-20 animate-pulse delay-500"></div>
-            
-            <!-- Floating school icons -->
-            <div class="absolute top-20 right-1/4 text-blue-300 opacity-30 animate-bounce">
-                <i class="fas fa-graduation-cap text-2xl"></i>
-            </div>
-            <div class="absolute bottom-40 left-1/4 text-green-300 opacity-30 animate-bounce delay-1000">
-                <i class="fas fa-book text-xl"></i>
-            </div>
-            <div class="absolute top-1/3 left-10 text-yellow-300 opacity-30 animate-bounce delay-2000">
-                <i class="fas fa-pencil-alt text-lg"></i>
-            </div>
+            <!-- Subtle decorative elements -->
+            <div class="absolute top-10 left-10 w-12 h-12 bg-white/20 dark:bg-blue-400/20 rounded-full blur-sm"></div>
+            <div class="absolute top-32 right-20 w-8 h-8 bg-white/15 dark:bg-purple-400/15 rounded-full blur-sm"></div>
+            <div class="absolute bottom-20 left-20 w-16 h-16 bg-white/25 dark:bg-indigo-400/25 rounded-full blur-sm"></div>
+            <div class="absolute bottom-32 right-10 w-6 h-6 bg-white/20 dark:bg-blue-300/20 rounded-full blur-sm"></div>
             
             <!-- Main content container -->
             <div class="w-full max-w-md mx-auto px-6">
                 
                 <!-- Logo section -->
-                <div class="text-center mb-8">
-                    <div class="inline-block p-4 bg-white rounded-full shadow-lg mb-4">
-                        <img src="{{ asset('logo.png') }}" alt="PiketWoi Logo" class="w-16 h-16 object-contain">
+                <div class="text-center mb-8 relative z-10">
+                    <div class="inline-block p-4 bg-white dark:bg-gray-800 rounded-full shadow-lg mb-4 transition-colors duration-300">
+                        <img src="{{ asset('assets/logo.png') }}" alt="PiketWoi Logo" class="w-16 h-16 object-contain">
                     </div>
-                    <h1 class="text-3xl font-bold text-gray-800 mb-2">PiketWoi</h1>
-                    <p class="text-gray-600 text-sm">Sistem Manajemen Piket Sekolah</p>
+                    <h1 class="text-3xl font-bold text-white mb-2 text-with-glow">PiketWoi</h1>
+                    <p class="text-white text-sm font-medium text-with-glow">Sistem Manajemen Piket Sekolah</p>
                 </div>
 
                 <!-- Auth form container -->
-                <div class="glass-effect rounded-2xl shadow-xl p-8 border border-white/20">
+                <div class="glass-effect rounded-2xl shadow-lg p-8 transition-all duration-300 relative z-10">
                     {{ $slot }}
                 </div>
                 
                 <!-- Footer -->
-                <div class="text-center mt-6">
-                    <p class="text-gray-500 text-xs">
+                <div class="text-center mt-6 relative z-10">
+                    <p class="text-white text-xs font-medium text-with-glow">
                         © {{ date('Y') }} PiketWoi. Dibuat untuk kemudahan manajemen piket sekolah.
                     </p>
                 </div>
