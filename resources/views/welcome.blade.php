@@ -154,7 +154,7 @@
                         </div>
                         <h3 class="text-lg font-semibold text-gray-900 mb-2">Jadwal Otomatis</h3>
                         <p class="text-gray-600 text-sm">
-                            Nggak perlu bingung lagi ngatur jadwal piket. Tinggal set sekali, sisanya biar sistem yang atur!
+                            Nggak perl bingung lagi ngatur jadwal piket. Tinggal set sekali, sisanya biar sistem yang atur!
                         </p>
                     </div>
 
