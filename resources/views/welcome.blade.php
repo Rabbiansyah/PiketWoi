@@ -73,7 +73,7 @@
         }
 
         .author-bg {
-            background-image: url('https://iili.io/Kh8ftON.md.png');
+            background-image: url('https://i.pinimg.com/1200x/27/7f/ba/277fba7bc86484d9f6cf37c87ee44de2.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -143,7 +143,7 @@
                         </a>
                         @else
                         <div class="relative">
-                            <a href="{{ route('login') }}"
+                            <a href="https://wa.me/+6288289303162" target="_blank"
                                 class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
                                 hubungi Admin
                             </a>
@@ -244,7 +244,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 author-content">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-gray-900 mb-3">
-                    Tim Kantasaurus
+                    Tim <span class="text-blue-700">Kantasaurus</span>
                 </h2>
                 <p class="text-gray-600">
                     Enam orang hebat yang berkontribusi membangun sistem ini untuk membantu sekolah di seluruh Indonesia 💙
@@ -256,10 +256,10 @@
                 <div class="bg-white rounded-2xl shadow-sm p-6 text-center card-hover">
                     <img src="https://i.pinimg.com/736x/fc/96/db/fc96dbd6f9edf489bd4b35c22e339c88.jpg" alt="Zaki"
                         class="w-24 h-24 mx-auto rounded-full object-cover mb-4 shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-900">Zaki</h3>
-                    <p class="text-sm text-blue-600 font-medium mb-2">Project Manager & Backend Developer</p>
+                    <h3 class="text-lg font-semibold text-gray-900">Faiz Asfar Triansyah</h3>
+                    <p class="text-sm text-blue-600 font-medium mb-2">Backend Developer</p>
                     <p class="text-gray-600 text-sm">
-                        Mengatur alur kerja tim dan membangun logika utama sistem PiketWoi.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, ipsa.
                     </p>
                 </div>
 
@@ -267,10 +267,10 @@
                 <div class="bg-white rounded-2xl shadow-sm p-6 text-center card-hover">
                     <img src="https://i.pinimg.com/736x/9d/e4/f8/9de4f8558d7a6db5a908f339f06c0f76.jpg" alt="Aisyah"
                         class="w-24 h-24 mx-auto rounded-full object-cover mb-4 shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-900">Aisyah</h3>
-                    <p class="text-sm text-green-600 font-medium mb-2">Frontend Developer</p>
+                    <h3 class="text-lg font-semibold text-gray-900">Gunawan Madia Pratama</h3>
+                    <p class="text-sm text-green-600 font-medium mb-2">Frontend Developer & UI/UX Designer</p>
                     <p class="text-gray-600 text-sm">
-                        Mendesain tampilan antarmuka yang ramah pengguna dan responsif.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, consequatur.
                     </p>
                 </div>
 
@@ -278,19 +278,19 @@
                 <div class="bg-white rounded-2xl shadow-sm p-6 text-center card-hover">
                     <img src="https://i.pinimg.com/1200x/d1/90/16/d190162270ed7406aa2360b9151fb06b.jpg" alt="Fajar"
                         class="w-24 h-24 mx-auto rounded-full object-cover mb-4 shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-900">Fajar</h3>
-                    <p class="text-sm text-yellow-600 font-medium mb-2">UI/UX Designer</p>
+                    <h3 class="text-lg font-semibold text-gray-900">Mikel Ibrahim</h3>
+                    <p class="text-sm text-yellow-600 font-medium mb-2">PKL</p>
                     <p class="text-gray-600 text-sm">
-                        Membuat pengalaman pengguna yang intuitif dan desain yang menarik.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, sit.
                     </p>
                 </div>
 
                 <!-- Member 4 -->
                 <div class="bg-white rounded-2xl shadow-sm p-6 text-center card-hover">
-                    <img src="{{ asset('team/nadia.jpg') }}" alt="Nadia"
+                    <img src="https://i.pinimg.com/736x/4a/f1/69/4af16906007bab9548f3ddd0b535a0e9.jpg" alt="Nadia"
                         class="w-24 h-24 mx-auto rounded-full object-cover mb-4 shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-900">Nadia</h3>
-                    <p class="text-sm text-purple-600 font-medium mb-2">QA & Documentation</p>
+                    <h3 class="text-lg font-semibold text-gray-900">Muhammad Fahri</h3>
+                    <p class="text-sm text-purple-600 font-medium mb-2">Backend Developer</p>
                     <p class="text-gray-600 text-sm">
                         Menguji fitur, memastikan stabilitas sistem, dan menulis dokumentasi teknis.
                     </p>
@@ -298,21 +298,21 @@
 
                 <!-- Member 5 -->
                 <div class="bg-white rounded-2xl shadow-sm p-6 text-center card-hover">
-                    <img src="{{ asset('team/rifqi.jpg') }}" alt="Rifqi"
+                    <img src="https://i.pinimg.com/736x/d6/27/e2/d627e2d89aa5019cf137d8cc29e4c9ab.jpg" alt="Rifqi"
                         class="w-24 h-24 mx-auto rounded-full object-cover mb-4 shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-900">Rifqi</h3>
-                    <p class="text-sm text-red-600 font-medium mb-2">DevOps Engineer</p>
+                    <h3 class="text-lg font-semibold text-gray-900">Rafif Dzaky Akmal</h3>
+                    <p class="text-sm text-red-600 font-medium mb-2">Frontend Developer & UI/UX Designer</p>
                     <p class="text-gray-600 text-sm">
-                        Mengatur server, deployment, dan integrasi berkelanjutan sistem PiketWoi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nostrum!
                     </p>
                 </div>
 
                 <!-- Member 6 -->
                 <div class="bg-white rounded-2xl shadow-sm p-6 text-center card-hover">
-                    <img src="{{ asset('team/salma.jpg') }}" alt="Salma"
+                    <img src="https://i.pinimg.com/736x/9b/b1/40/9bb14080fbafb935d0d505ba94cd14b7.jpg" alt="Salma"
                         class="w-24 h-24 mx-auto rounded-full object-cover mb-4 shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-900">Salma</h3>
-                    <p class="text-sm text-pink-600 font-medium mb-2">Support & Content Writer</p>
+                    <h3 class="text-lg font-semibold text-gray-900">Vylan Yoza Sinaga</h3>
+                    <p class="text-sm text-pink-600 font-medium mb-2">UI/UX Designer</p>
                     <p class="text-gray-600 text-sm">
                         Menulis konten promosi, panduan pengguna, dan membantu pengguna sekolah baru.
                     </p>
@@ -344,5 +344,4 @@
         </div>
     </footer>
 </body>
-
 </html>
