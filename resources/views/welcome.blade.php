@@ -171,7 +171,7 @@
                         </a>
                         @else
                         <div class="relative">
-                            <a href="https://wa.me/+6288289303162" target="_blank"
+                            <a href="#contact" data-scroll
                                 class="px-6 py-3 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-medium rounded-lg transition-colors">
                                 Hubungi Admin
                             </a>
@@ -211,12 +211,29 @@
         </div>
     </section>
 
+    <!-- Tentang Website Section -->
+    <section class="py-20 bg-gray-50 dark:bg-slate-900 transition-colors duration-300" id="tentang">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+                    Tentang <span class="text-blue-600">PiketWoi</span>
+                </h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                    PiketWoi adalah platform berbasis web yang dirancang untuk membantu sekolah atau organisasi
+                    dalam <span class="font-bold">mengatur jadwal piket harian secara mudah, cepat, dan efisien</span>.
+                    Website ini lahir dari ide sederhana: bagaimana cara membuat kegiatan piket lebih terorganisir dan transparan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
     <!-- About Section -->
     <section class="py-16 bg-white dark:bg-gray-800 transition-colors duration-300" id="about">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-3">
-                    Kenapa Harus PiketWoi?
+                    Kenapa Harus <span class="text-blue-600">PiketWoi</span>?
                 </h2>
                 <p class="text-gray-600 dark:text-gray-400">
                     Karena ngatur piket sekolah nggak harus ribet!
@@ -261,6 +278,60 @@
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Akses dari HP</h3>
                     <p class="text-gray-600 dark:text-gray-300 text-sm">
                         Bisa diakses dari HP kapan aja, dimana aja. Mau cek jadwal atau laporan, tinggal buka browser!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300" id="contact">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+                Hubungi Kami
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
+                Punya pertanyaan, saran, atau kendala? Tim kami siap bantu!
+                Jangan ragu untuk menghubungi kami kapan pun.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Contact Card 1 -->
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-sm card-hover">
+                    <div class="text-blue-600 dark:text-blue-400 text-3xl mb-3">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Email</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        <a href="mailto:admin@piketwoi.com" class="hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            admin@piketwoi.com
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Contact Card 2 -->
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-sm card-hover">
+                    <div class="text-green-600 dark:text-green-400 text-3xl mb-3">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">WhatsApp</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        <a href="https://wa.me/6288289303162" target="_blank" class="hover:text-green-600 dark:hover:text-green-400 transition">
+                            +62 882-8930-3162
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Contact Card 3 -->
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-sm card-hover">
+                    <div class="text-purple-600 dark:text-purple-400 text-3xl mb-3">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Alamat</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        <a href="https://maps.app.goo.gl/DT177LkHp3s54izg7" target="_blank" class="hover:text-purple-600 dark:hover:text-purple-400 transition">
+                            SMKN 1 Jakarta<br>
+                        Jl. Budi Utomo No.7, Kota Jakarta Pusat
+                        </a>
                     </p>
                 </div>
             </div>
@@ -358,15 +429,15 @@
                     <span class="text-xl font-bold text-gray-800 dark:text-gray-200">PiketWoi</span>
                 </div>
                 <p class="text-gray-600 dark:text-gray-400 mb-6 max-w-md mx-auto">
-                    Laporan piket sekolah jadi lebih mudah dan terorganisir. Gratis untuk semua sekolah di Indonesia!
+                    Laporan piket sekolah jadi lebih mudah dan terorganisir. Membantu untuk semua sekolah di Indonesia!
                 </p>
                 <div class="flex justify-center space-x-6 text-sm text-gray-500 dark:text-gray-400 mb-6">
-                    <a href="#about" data-scroll class="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">Tentang</a>
-                    <a href="#" data-scroll class="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">Bantuan</a>
-                    <a href="#" data-scroll class="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">Kontak</a>
+                    <a href="#tentang" data-scroll class="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">Tentang</a>
+                    <a href="#about" data-scroll class="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">Fitur</a>
+                    <a href="#contact" data-scroll class="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">Kontak</a>
                 </div>
                 <p class="text-sm text-gray-500 dark:text-gray-400">
-                    © {{ date('Y') }} PiketWoi. Dibuat dengan ❤️ untuk sekolah Indonesia.
+                    © {{ date('Y') }} PiketWoi. Made with passion.
                 </p>
             </div>
         </div>
@@ -398,4 +469,5 @@
     </script>
 
 </body>
+
 </html>
