@@ -42,7 +42,7 @@
             background: rgba(248, 250, 252, 0.85);
             backdrop-filter: blur(2px);
         }
-        
+
         .dark .hero-bg::before {
             background: rgba(17, 24, 39, 0.85);
         }
@@ -94,7 +94,7 @@
             background: rgba(248, 250, 252, 0.85);
             backdrop-filter: blur(2px);
         }
-        
+
         .dark .author-bg::before {
             background: rgba(17, 24, 39, 0.85);
         }
@@ -112,7 +112,7 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
         }
-        
+
         .dark .navbar-glass {
             background: rgba(31, 41, 55, 0.85);
             border-bottom: 1px solid rgba(75, 85, 99, 0.2);
@@ -136,7 +136,7 @@
                 <div class="flex items-center space-x-4">
                     <!-- Dark Mode Toggle -->
                     <x-dark-mode-toggle />
-                    
+
                     @if (Route::has('login'))
                     <livewire:welcome.navigation />
                     @endif
@@ -361,9 +361,9 @@
                     Laporan piket sekolah jadi lebih mudah dan terorganisir. Gratis untuk semua sekolah di Indonesia!
                 </p>
                 <div class="flex justify-center space-x-6 text-sm text-gray-500 dark:text-gray-400 mb-6">
-                    <a href="#about" class="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">Tentang</a>
-                    <a href="#" class="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">Bantuan</a>
-                    <a href="#" class="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">Kontak</a>
+                    <a href="#about" data-scroll class="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">Tentang</a>
+                    <a href="#" data-scroll class="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">Bantuan</a>
+                    <a href="#" data-scroll class="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">Kontak</a>
                 </div>
                 <p class="text-sm text-gray-500 dark:text-gray-400">
                     © {{ date('Y') }} PiketWoi. Dibuat dengan ❤️ untuk sekolah Indonesia.
@@ -371,5 +371,31 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelectorAll('a[data-scroll]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    const navbarHeight = document.querySelector('nav').offsetHeight;
+                    const targetPosition = target.getBoundingClientRect().top + window.scrollY - navbarHeight + 10;
+
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+
+                if (history.pushState) {
+                    history.pushState(null, null, window.location.pathname);
+                } else {
+                    window.location.hash = '';
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>

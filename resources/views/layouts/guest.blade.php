@@ -55,14 +55,16 @@
         </style>
     </head>
     <body class="font-sans text-gray-900 dark:text-gray-100 antialiased transition-colors duration-300">
-        <!-- Dark mode toggle -->
-        <div class="fixed top-6 right-6 z-50">
+
+        <!-- Dark mode toggle & Back -->
+        <div class="fixed top-6 right-6 z-50 flex items-center gap-3">
+            <x-back-button/>
             <x-dark-mode-toggle />
         </div>
         
         <!-- Main Container -->
         <div class="auth-container">
-            <div class="grid lg:grid-cols-2 min-h-screen">
+            <div class="grid lg:grid-cols-2 h-screen">
                 
                 <!-- Left Side - Illustration & Branding -->
                 <div class="hidden lg:flex flex-col justify-center items-center p-8 bg-gradient-to-br from-cyan-400 via-blue-400 to-blue-500 relative overflow-hidden">
@@ -82,11 +84,11 @@
                     <div class="absolute top-1/4 right-1/4 w-32 h-32 bg-white/10 rounded-full"></div>
                     
                     <!-- Branding -->
-                    <div class="relative z-10 text-center mb-8">
+                    <div class="relative top-10 z-10 text-center">
                         <div class="flex items-center justify-center mb-4">
-                            <img src="{{ asset('assets/logo.png') }}" alt="PiketWoi Logo" class="w-12 h-12 object-contain mr-3">
+                            <img src="{{ asset('assets/logo.png') }}" alt="PiketWoi Logo" class="w-14 h-14 object-contain mr-3">
                             <div class="text-left">
-                                <h1 class="text-2xl font-bold text-white">
+                                <h1 class="text-3xl font-bold text-white">
                                     PiketWoi
                                 </h1>
                             </div>
