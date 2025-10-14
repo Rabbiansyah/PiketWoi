@@ -12,12 +12,19 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->string('name');
+            $table->string('nis')->unique();
             $table->string('email')->unique();
+<<<<<<< HEAD
             $table->enum('kelas', ['X', 'XI', 'XII']);
             $table->enum('jurusan', ['RPL', 'TKJ', 'SIJA', 'DKV', 'TKR 1', 'TKR 2', 'TITL 1', 'TITL 2', 'TITL 3', 'TP 1', 'TP 2', 'DPIB 1', 'DPIB 2', 'TKP 1', 'TKP 2', 'DGM']);
             $table->enum('role', ['user', 'admin', 'developer'])->default('user');
+=======
+            $table->enum('kelas', ['X', 'XI', 'XII', 'developer']);
+            $table->enum('jurusan', ['RPL', 'TKJ 1', 'TKJ 2', 'SIJA', 'DKV', 'TKR 1', 'TKR 2', 'TITL 1', 'TITL 2', 'TITL 3', 'TP 1', 'TP 2', 'DPIB 1', 'DPIB 2', 'TKP 1', 'TKP 2', 'DGM', 'developer']);
+            $table->enum('role', ['siswa', 'admin', 'developer'])->default('siswa');
+>>>>>>> 93e2f8d5bf9444518ec27dd56975904a38f30542
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
