@@ -15,21 +15,21 @@
             {{-- Konten untuk Admin --}}
             <div class="bg-red-100 p-4 rounded">
                 <h3 class="font-bold text-lg">Admin Dashboard</h3>
-                <p>Halo Admin! Kamu dapat mengelola user, sistem, dan laporan.</p>
+                <p>Halo Admin!.</p>
             </div>
 
         @elseif($role === 'developer')
             {{-- Konten untuk Developer --}}
             <div class="bg-blue-100 p-4 rounded">
                 <h3 class="font-bold text-lg">Developer Dashboard</h3>
-                <p>Halo Developer! Kamu dapat melihat log, debugging, dan API.</p>
+                <p>Halo Developer!.</p>
             </div>
 
         @elseif($role === 'user')
             {{-- Konten untuk User --}}
             <div class="bg-green-100 p-4 rounded">
                 <h3 class="font-bold text-lg">User Dashboard</h3>
-                <p>Selamat datang! Ini adalah halaman user biasa.</p>
+                <p>Selamat datang!.</p>
             </div>
         @endif
     </div>
