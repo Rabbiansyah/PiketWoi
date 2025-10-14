@@ -1,17 +1,36 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Dashboard') }}
+        <h2 class="text-xl font-semibold">
+            Dashboard - {{ ucfirst(Auth::user()->role) }}
         </h2>
     </x-slot>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg transition-colors duration-300">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You're logged in!") }}
-                </div>
+    <div class="p-6 text-gray-900">
+        {{-- Konten berdasarkan role --}}
+        @php
+            $role = Auth::user()->role;
+        @endphp
+
+        @if($role === 'admin')
+            {{-- Konten untuk Admin --}}
+            <div class="bg-red-100 p-4 rounded">
+                <h3 class="font-bold text-lg">Admin Dashboard</h3>
+                <p>Halo Admin! Kamu dapat mengelola user, sistem, dan laporan.</p>
             </div>
-        </div>
+
+        @elseif($role === 'developer')
+            {{-- Konten untuk Developer --}}
+            <div class="bg-blue-100 p-4 rounded">
+                <h3 class="font-bold text-lg">Developer Dashboard</h3>
+                <p>Halo Developer! Kamu dapat melihat log, debugging, dan API.</p>
+            </div>
+
+        @elseif($role === 'user')
+            {{-- Konten untuk User --}}
+            <div class="bg-green-100 p-4 rounded">
+                <h3 class="font-bold text-lg">User Dashboard</h3>
+                <p>Selamat datang! Ini adalah halaman user biasa.</p>
+            </div>
+        @endif
     </div>
 </x-app-layout>
