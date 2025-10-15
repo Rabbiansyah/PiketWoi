@@ -1,4 +1,4 @@
-<!-- developer.blade.php -->
-<div class="p-4 bg-white shadow rounded">
-    <h3 class="text-lg font-bold">Welcome Developer!</h3>
+<div class="bg-blue-100 p-4 rounded">
+    <h3 class="font-bold text-lg">Developer Dashboard</h3>
+    <p>Halo Developer, {{ Auth::user()->name }}!</p>
 </div>

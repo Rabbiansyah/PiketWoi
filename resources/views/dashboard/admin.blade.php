@@ -1,4 +1,4 @@
-<!-- admin.blade.php -->
-<div class="p-4 bg-white shadow rounded">
-    <h3 class="text-lg font-bold">Welcome Admin!</h3>
+<div class="bg-red-100 p-4 rounded">
+    <h3 class="font-bold text-lg">Admin Dashboard</h3>
+    <p>Halo Admin, {{ Auth::user()->name }}!</p>
 </div>
