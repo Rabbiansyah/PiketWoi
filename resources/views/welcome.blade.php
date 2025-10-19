@@ -358,7 +358,7 @@
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Faiz Asfar Triansyah</h3>
                     <p class="text-sm text-blue-600 dark:text-blue-400 font-medium mb-2">Backend Developer</p>
                     <p class="text-gray-600 dark:text-gray-300 text-sm">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, ipsa.
+                        peod
                     </p>
                 </div>
 
@@ -369,7 +369,7 @@
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Gunawan Madia Pratama</h3>
                     <p class="text-sm text-green-600 dark:text-green-400 font-medium mb-2">Frontend Developer & UI/UX Designer</p>
                     <p class="text-gray-600 dark:text-gray-300 text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, consequatur.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis distinctio placeat, quia blanditiis voluptatibus eos officiis. Eos sed sit minima ducimus, expedita repellendus tempore debitis provident est, voluptas quisquam saepe!
                     </p>
                 </div>
 
@@ -380,7 +380,7 @@
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Mikel Ibrahim</h3>
                     <p class="text-sm text-yellow-600 dark:text-yellow-400 font-medium mb-2">PKL</p>
                     <p class="text-gray-600 dark:text-gray-300 text-sm">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, sit.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto ducimus fugiat quos impedit alias velit fugit ut. Facilis error numquam enim, debitis officia amet quos corrupti molestias ab nobis adipisci!
                     </p>
                 </div>
 
@@ -391,7 +391,7 @@
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Muhammad Fahri</h3>
                     <p class="text-sm text-purple-600 dark:text-purple-400 font-medium mb-2">Backend Developer</p>
                     <p class="text-gray-600 dark:text-gray-300 text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nostrum!
+                        HIDUPPPPPP BLONDEEEEEEEEEEEEEE!!!!!!!!!!!!!!!!!
                     </p>
                 </div>
 
@@ -402,7 +402,7 @@
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Rafif Dzaky Akmal</h3>
                     <p class="text-sm text-red-600 dark:text-red-400 font-medium mb-2">Frontend Developer & UI/UX Designer</p>
                     <p class="text-gray-600 dark:text-gray-300 text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nostrum!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, iste ex! Debitis inventore unde eligendi, voluptatem, praesentium fuga repudiandae placeat, sint sapiente quod ea veritatis odit illo ad. Labore, vero?
                     </p>
                 </div>
 
@@ -413,7 +413,7 @@
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Vylan Yoza Sinaga</h3>
                     <p class="text-sm text-pink-600 dark:text-pink-400 font-medium mb-2">UI/UX Designer</p>
                     <p class="text-gray-600 dark:text-gray-300 text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nostrum!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quaerat, numquam dolorem corrupti nemo sint optio impedit eos voluptatum unde, cum perspiciatis doloribus officia quidem culpa eius beatae saepe aspernatur.
                     </p>
                 </div>
             </div>

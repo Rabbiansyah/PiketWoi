@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('nis')->unique();
             $table->string('email')->unique();
-            $table->enum('kelas', ['X', 'XI', 'XII']);
-            $table->enum('jurusan', ['RPL', 'TKJ', 'SIJA', 'DKV', 'TKR 1', 'TKR 2', 'TITL 1', 'TITL 2', 'TITL 3', 'TP 1', 'TP 2', 'DPIB 1', 'DPIB 2', 'TKP 1', 'TKP 2', 'DGM']);
+            $table->enum('kelas', ['X', 'XI', 'XII'])->default('XII');
+            $table->enum('jurusan', ['RPL', 'TKJ', 'SIJA', 'DKV', 'TKR 1', 'TKR 2', 'TITL 1', 'TITL 2', 'TITL 3', 'TP 1', 'TP 2', 'DPIB 1', 'DPIB 2', 'TKP 1', 'TKP 2', 'DGM'])->default('RPL');
             $table->enum('role', ['user', 'admin', 'developer'])->default('user');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
