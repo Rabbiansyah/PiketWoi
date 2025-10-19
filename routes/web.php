@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JadwalController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -14,10 +15,16 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
-// Semua role
-Route::view('piket/jadwal', 'pages.piket.jadwal')
-    ->middleware(['auth', 'verified', 'role:user,admin,developer'])
+// Semua role dapat melihat jadwal, input hanya oleh admin (divalidasi di controller)
+Route::get('piket/jadwal', [JadwalController::class, 'index'])
+    ->middleware(['auth', 'verified'])
     ->name('piket.jadwal');
+Route::post('piket/jadwal', [JadwalController::class, 'store'])
+    ->middleware(['auth', 'verified'])
+    ->name('piket.jadwal.store');
+Route::post('piket/jadwal/bulk', [JadwalController::class, 'storeBulk'])
+    ->middleware(['auth', 'verified'])
+    ->name('piket.jadwal.storeBulk');
 
 // Upload: user, admin, developer
 Route::view('piket/upload', 'pages.piket.upload')
